@@ -1,0 +1,15 @@
+<div class="container">
+
+<% @flats.each do |flat| %>
+<div class="card" style="width: 18rem;">
+  <img src="/app/assets/images/2560px-Flat.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><%= flat.name %></h5>
+    <p class="card-text"> In <%= flat.address %> for only <%= flat.price_x_night %>€</p>
+    <p class="card-text">Max guests: <%= flat.number_of_guests %></p>
+    <%# <a href="#" class="btn btn-primary">Go somewhere</a> %>
+  </div>
+</div>
+<% end %>
+
+</div>
